@@ -1,5 +1,5 @@
 ## My first Portfolio
 
-But only for a English homework x)
+But only for an english homework x)
 
 😊 😁 👌
