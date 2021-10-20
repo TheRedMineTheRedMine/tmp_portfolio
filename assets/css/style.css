@@ -281,12 +281,12 @@ main section#lang .circle1 {
     height: 50vh;
     background: #0ac;
     border-radius: 50vw;
-    top: calc(320vh + 4em);
+    top: calc(340vh + 4em);
     right: 5vw;
 }
 
 main section#lang .text_content {
-    top: 315vh;
+    top: 305vh;
     left: 32vw;
 }
 
