@@ -1,0 +1,326 @@
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, main,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    font-family: 'SourceSansPro-Regular';
+}
+
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var,b, u, i, main,
+center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video { box-sizing: inherit; }
+
+html { box-sizing: border-box; }
+
+body { background-color: #22222a; }
+
+svg:not(:root) { display: block }
+
+input[type="checkbox"] { cursor: pointer }
+
+/* scrollbar */
+body::-webkit-scrollbar { width: 12px; }
+
+body::-webkit-scrollbar-track { background: #111; }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 24px;
+    border: 2px solid #111;
+}
+
+/* main */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #2228;
+    z-index: 10;
+    height: 120px;
+}
+
+header .name {
+    color: #0ad;
+    font-family: 'SourceSansPro-Bold';
+    margin: 5px 1em;
+    display: flex;
+    flex-direction: row;
+    text-shadow: none;
+    pointer-events: none;
+}
+
+header .name .first.letter {
+    font-size: 7.4rem;
+    position: relative;
+    top: -1.5rem;
+    text-shadow: 3px -3px #0ad7;
+    transition: all .2s ease-out;
+}
+
+header .name .first.letter.active { text-shadow: 3px -3px #0ad4; }
+
+header .name div {
+    position: relative;
+    left: -1.2rem;
+}
+
+header .name div span {
+    position: relative;
+    font-size: 1.8rem;
+    top: 1.8rem;
+    text-shadow: 2px -2px #0ad6;
+    transition: all .2s ease-out;
+}
+
+header .name div span.active { text-shadow: 2px -2px #0ad3; }
+
+header .name div span:nth-child(1) {
+    position: relative;
+    top: 2rem;
+}
+
+header .content {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    margin: 3em 1em;
+}
+
+header .content li {
+    margin: 0 1.5em;
+    cursor: pointer;
+    transition: all .4s linear;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header .content li .animation {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 1em;
+    height: 1em;
+    background: #0aec;
+    z-index: -1;
+    transition: all .5s;
+    cursor: pointer;
+    border-radius: 5em;
+    opacity: 0;
+    top: 0;
+}
+
+header .content li .animation.active {
+    width: 6em;
+    height: 6em;
+    top: -2.2em;
+    opacity: 60%;
+}
+
+header .content li:hover { opacity: 85%; }
+
+header .content li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+header .content li a::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    transition: all .4s ease;
+}
+
+header .content li:hover a::before {
+    width: 30px;
+    background: #ddd;
+}
+
+main {
+    height: 498vh;
+    color: #fff;
+}
+
+main section {
+    width: 98vw;
+    height: 98vh;
+    margin: 1vw 0;
+    overflow: hidden;
+}
+
+main section#home, main section#contact { margin: 0; }
+
+main section .top-clearfix { height: 9em; }
+
+main section .text_content h2 { font-size: 2.5rem; }
+
+main section .text_content {
+    position: absolute;
+    width: 40vw;
+    left: 28vw;
+}
+
+main section#home .circle1 {
+    position: absolute;
+    width: 60vh;
+    height: 120vh;
+    background: #0ad;
+    bottom: -60vh;
+    left: 0;
+    border-radius: 0 60vh 60vh 0;
+    z-index: 0;
+}
+
+main section#home .text_content { top: calc(50vh - 4em); }
+
+main section#home .circle2 {
+    position: absolute;
+    width: 80vh;
+    height: 80vh;
+    background: #0ac;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 80vh;
+    z-index: 0;
+}
+
+main section#about .text_content { top: calc(150vh - 4em); }
+
+main section#about .field {
+    position: absolute;
+    width: 50vh;
+    height: 100vh;
+    top: 100vh;
+    right: 0;
+}
+
+main section#about .circle1 {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    background: #0ad;
+    border-radius: 10em;
+}
+
+main section#about .circle2 {
+    position: absolute;
+    width: 6em;
+    height: 6em;
+    background: #0ac;
+    border-radius: 6em;
+    top: 38vh;
+    left: 30vh;
+}
+
+main section#about .circle3 {
+    position: absolute;
+    width: 40vh;
+    height: 80vh;
+    background: #0ade;
+    top: 60vh;
+    right: 0;
+    border-radius: 80vh 0 0 80vh;
+}
+
+main section#websites .circle {
+    position: absolute;
+    width: 70vw;
+    height: 70vw;
+    background: #0ac;
+    border-radius: 50vw;
+    top: calc(202vh + 4em);
+    left: 15vw;
+}
+
+main section#websites .text_content { padding-top: 6em; }
+
+main section#websites .text_content ul {
+    list-style: none;
+    position: relative;
+    left: 10px;
+}
+
+main section#websites .text_content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main section#websites .text_content ul li:hover a { text-decoration: 1px underline solid #fff; }
+
+main section#lang .circle1 {
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    background: #0ac;
+    border-radius: 50vw;
+    top: calc(340vh + 4em);
+    right: 5vw;
+}
+
+main section#lang .text_content {
+    top: 315vh;
+    left: 32vw;
+}
+
+main section#contact .circle1 {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    background: #0ac;
+    border-radius: 50vw;
+    top: calc(375vh + 4em);
+    left: 5vw;
+}
+
+main section#contact .text_content {
+    top: 420vh;
+    left: 10vw;
+}
+
+main section#contact .circle2 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background: #0ac;
+    border-radius: 50vw;
+    top: calc(420vh + 4em);
+    left: 65vw;
+}
+
+main section#contact .circle3 {
+    position: absolute;
+    width: 20vw;
+    height: 30vw;
+    background: #0ad;
+    border-radius: 100% 0 0 0;
+    top: 440vh;
+    left: 79vw;
+}

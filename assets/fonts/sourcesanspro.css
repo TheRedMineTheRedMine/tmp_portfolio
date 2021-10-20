@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'SourceSansPro-Black';
+    src: url('SourceSansPro/SourceSansPro-Black.woff2') format('woff2'),
+         url('SourceSansPro/SourceSansPro-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Bold';
+    src: url('SourceSansPro/SourceSansPro-Bold.woff2') format('woff2'),
+         url('SourceSansPro/SourceSansPro-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-BoldItalic';
+    src: url('SourceSansPro/SourceSansPro-BoldItalic.woff2') format('woff2'),
+         url('SourceSansPro/SourceSansPro-BoldItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-ExtraLight';
+    src: url('SourceSansPro/SourceSansPro-ExtraLight.woff2') format('woff2'),
+         url('SourceSansPro/SourceSansPro-ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Italic';
+    src: url('SourceSansPro/SourceSansPro-Italic.woff2') format('woff2'),
+         url('SourceSansPro/SourceSansPro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Light';
+    src: url('SourceSansPro/SourceSansPro-Light.woff2') format('woff2'),
+         url('SourceSansPro/SourceSansPro-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-LightItalic';
+    src: url('SourceSansPro/SourceSansPro-LightItalic.woff2') format('woff2'),
+         url('SourceSansPro/SourceSansPro-LightItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('SourceSansPro/SourceSansPro-Regular.woff2') format('woff2'),
+         url('SourceSansPro/SourceSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-SemiBold';
+    src: url('SourceSansPro/SourceSansPro-SemiBold.woff2') format('woff2'),
+         url('SourceSansPro/SourceSansPro-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-SemiBoldItalic';
+    src: url('SourceSansPro/SourceSansPro-SemiBoldItalic.woff2') format('woff2'),
+         url('SourceSansPro/SourceSansPro-SemiBoldItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
